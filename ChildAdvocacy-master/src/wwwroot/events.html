@@ -1,0 +1,106 @@
+<html>
+<head>
+<title></title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/6850507bfa.js" crossorigin="anonymous"></script>
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script>
+$(function(){
+  $("#header").load("header.html");
+  $("#footer").load("footer.html");
+});
+</script>
+</head>
+<body>
+<div id="header"></div>
+<img src="Event Logos/20th anniversary.png" class="event-logo">
+<div class="conatiner post-body">
+    <h1 class="heading-1">Events</h1>
+    <div class="baseline-1"></div>
+    <div class="baseline-2"></div>
+
+    <!-- each row is an event and contains left and right content. This alternates which sides
+    the pictures and text are located -->
+    <div class="row content-row">
+        <div class="col-6 img-col">
+            <img src="Event Logos/turkey tee off.png">
+        </div>
+        <div class="col-6 right-content">
+            <h1>NOVEMBER 7 2020</h1>
+            <h3 class="content-h3">Turkey Tee Off</h3>
+            <span class="right-content-span">The Turkey Tee Off is a golf tournament held on the first Saturday in November.  
+            Registration begins at 8 a.m., with a breakfast, guest speakers, and a 9 a.m. tee off.  
+            A Slick Pig BBQ lunch is provided after the tournament with a silent auction and prizes for the winners.  
+            Phillip and Steven Smith and the Smith family were the founders of the event.  
+            2020 is the 10th year for the Turkey Tee Off.</span>
+            <div class="right-join-btn">
+                <!-- currently, these buttons connect to nothing (need to be hooked up) -->
+                <button class="">Register</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row content-row">
+        <div class="col-6 left-content">
+            <h1>APRIL 2021</h1>
+            <h3 class="content-h3">Hometown Heroes Walk for Children</h3>
+            <span class="right-content-span">Child Advocacy Center celebrates Child Abuse Prevention Month with the Hometown Heroes Walk for Children. 
+            The free event is held on one of the last Fridays in April. 
+            It begins at the Murfreesboro Civic Plaza.  
+            Awards are presented to local hometown heroes.  
+            The event concludes with a picnic lunch at the Child Advocacy Center.  
+            300-400 people attend the event.  2021 is the 6th year for the Hometown Heroes Walk.  
+            Prior to that, the Child Advocacy Center hosted Andrea Walks for Tennessee’s Children for 6 years.  
+            Former First Lady Andrea Conte was the founder of the event.</span>
+            <div class="right-join-btn">
+                <button class="">Register</button>
+            </div>
+        </div>
+        <div class="col-6 img-col">
+            <img src="Event Logos/hometown heros.png">
+        </div>
+    </div>
+
+    <div class="row content-row">
+        <div class="col-6 img-col">
+            <img src="Event Logos/cannon runs.png">
+        </div>
+        <div class="col-6 right-content">
+            <h1>MAY 2021</h1>
+            <h3 class="content-h3">Cannon Runs for Children</h3>
+            <span class="right-content-span">Cannon Runs for Children is a fun run that is held on a Saturday.  
+            Children and their parents run in the event.  The Run funds the Cannon County Child Advocacy Center.  
+            It is a 3.1 mile course.  The race begins at 7:30 a.m. at Dillon Park, registration starts at 6:45 a.m., with speakers at 7:15 a.m. 
+            There is a $20 entry fee for adults and children run FREE!!  2021 is the 4th year for the event. </span>
+            <div class="right-join-btn">
+                <button class="">Register</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row content-row">
+        <div class="col-6 left-content">
+            <h1>SEPTEMBER 2021</h1>
+            <h3 class="content-h3">Light Up the Night</h3>
+            <span class="right-content-span">Light Up the Night is an end of the summer party that has been held on a Friday evening in September.  
+            Guests dance under the stars, mix and mingle, and enjoy a summer evening.  
+            Guests are asked to wear white to help Light Up the Night.  2021 is the 4th year for the event. </span>
+            <div class="right-join-btn">
+                <button class="">Register</button>
+            </div>
+        </div>
+        <div class="col-6 img-col">
+            <img id="night-up-light-logo" src="Event Logos/Light up the night.png">
+        </div>
+    </div>
+</div>`
+
+<div id="footer"></div>
+</body>
+</html>

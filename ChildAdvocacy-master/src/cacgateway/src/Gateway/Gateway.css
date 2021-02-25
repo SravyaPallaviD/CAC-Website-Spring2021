@@ -1,0 +1,57 @@
+.login-form {
+  position: relative;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 45px;
+  padding-bottom: 95px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  transform: translateY(+25%);
+  vertical-align: central;
+  top: 50%;
+}
+
+.registration-container {
+  position: relative;
+  max-width: 400px;
+  height: 800px;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  vertical-align: central;
+  padding: 0.5%;
+  transform: translateY(+1.5%);
+}
+
+.registration-form {
+  width: 80%;
+  height: 100%;
+  align-items: center;
+  text-align: center;
+  transform: translateX(+10%);
+  padding: 5% 0% 0% 5%;
+}
+
+.forgotpassword-form {
+  position: relative;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  transform: translateY(+25%);
+  vertical-align: central;
+  top: 50%;
+}
+
+.twofactor-form {
+  position: relative;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  transform: translateY(+25%);
+  vertical-align: central;
+  top: 50%;
+}

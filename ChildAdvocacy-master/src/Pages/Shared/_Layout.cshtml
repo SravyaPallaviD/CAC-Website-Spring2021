@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6850507bfa.js" crossorigin="anonymous"></script>
+
+
+
+    <style type="text/css">
+        /* ============ desktop view ============ */
+        @@ mediaall and (min-width: 992px) {
+            .navbar .nav-item .dropdown-menu {
+                display: none;
+            }
+
+            .navbar .nav-item:hover .nav-link {
+                color: #fff;
+            }
+
+            .navbar .nav-item:hover .dropdown-menu {
+                display: block;
+            }
+
+            .navbar .nav-item .dropdown-menu {
+                margin-top: 0;
+            }
+        }
+
+        /* ============ desktop view .end// ============ */
+    </style>
+    <a href="/" data-link><img class="logo" src="Logoimages/Logo.png" width="200px"></a>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="main_nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"> <a class="nav-link" href="/" data-link>HOME</a> </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="https://apps.tn.gov/carat/referral/emergency.html"
+                            data-toggle="dropdown" data-link>CHILD ABUSE REPORTING</a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-item"><a href="https://apps.tn.gov/carat/referral/emergency.html">Report
+                                    Online</a></li>
+                            <li class="dropdown-item"><a href="tel:877237004">877-237-0004</a></li>
+                            <li class="dropdown-item"><a
+                                    href="https://www.tn.gov/dcs/program-areas/child-safety/reporting/child-abuse.html">More
+                                    Information</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="/rutherford_services" data-toggle="dropdown" data-link>RUTHERFORD
+                            COUNTY</a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-item"><a href="/rutherford-services.html" data-link>Services</a></li>
+                            <li class="dropdown-item"><a href="/rutherford-d2l.html" data-link>Darkness To Light</a>
+                            </li>
+                            <li class="dropdown-item"><a href="/rutherford-cpit.html" data-link>CPIT Team</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="/cannon_services" data-toggle="dropdown" data-link>CANNON COUNTY</a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-item"><a href="/cannon-services.html" data-link>Services</a></li>
+                            <li class="dropdown-item"><a href="/cannon-d2l.html" data-link>Darkness To Light</a></li>
+                            <li class="dropdown-item"><a href="/cannon-cpit.html" data-link>CPIT Team</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="ourTeam.html" data-toggle="dropdown">OUR TEAM</a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-item"><a href="ourTeam.html">Our Team</a></li>
+                            <li class="dropdown-item"><a href="/outTeam-communitypartners.html">Community Partners</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link" href="/family-services.html" data-link> FAMILY SERVICES
+                        </a></li>
+
+                    <li class="nav-item"><a class="nav-link" href="/events.html" data-link> EVENTS </a></li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="/host_event" data-toggle="dropdown" data-link> GET INVOLVED </a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-item"><a href="/gi-hostevent.html" data-link> Host An Event</a></li>
+                            <li class="dropdown-item"><a href="/gi-volunteer.html" data-link> Volunteer </a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="/press_releases" data-toggle="dropdown" data-link> MEDIA </a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-item"><a href="/press-releases.html" data-link> Press Releases</a></li>
+                            <li class="dropdown-item"><a href="/newsletters.html" data-link> Newsletters </a></li>
+                            <li class="dropdown-item"><a href="/more-info.html" data-link> More Information </a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link" href="/gratitude.html" data-link> GRATITUDE </a></li>
+
+                    <li class="nav-item"><a class="nav-link"
+                            href="https://cacrutherford.networkforgood.com/projects/103408-donations-to-help-child-abuse-victims">
+                            DONATE </a></li>
+                </ul>
+
+            </div> <!-- navbar-collapse.// -->
+        </nav>
+    </div>
+</head>
+
+<body>
+    @RenderBody()
+</body>
+
+<footer>
+    <div class="addresses">
+        <div class="address-item">
+            <p> <em>
+                Child Advocacy Center of Rutherford County, Inc<br>
+                1040 Samsonite Blvd<br>
+                Murfreesboro, TN 37129<br>
+                Phone: (615)867-9000<br>
+                </em>
+            </p>
+        </div>
+        <div class="address-item">
+            <p>
+                <em>
+                Cannon County Child Advocacy Center<br>
+                214 West Water Street<br>
+                Woodbury, TN 37190<br>
+                Phone: (615)563-9915<br>
+                </em>
+            </p>
+        </div>
+        <div class="address-item">
+            <p>
+                <em>
+                FOR MORE INFORMATION<br>
+                <a href="https://www.instagram.com/cacrutherford" class="social-media-icons"><i class="fab fa-instagram-square fa-2x"></i></a>Follow Us On Instagram<br>
+                <a href="https://www.facebook.com/CACRutherford/" class="social-media-icons"><i class="fab fa-facebook-square fa-2x"></i></a>Follow Us On Facebook<br>
+                <a href="https://twitter.com/RutherfordCac" class="social-media-icons"><i class="fab fa-twitter-square fa-2x"></i></a>Follow Us On Twitter<br>
+                </em>
+            </p>
+        </div>
+    </div>
+
+    <div class="footerimages">
+        <div class="footer-image">
+            <a href="https://www.tn.gov/dcs.html"> <img src="footerimages/tndcs.png" alt="Department of Child Services" width="220px"> </a>
+        </div>
+        <div class="footer-image">
+            <a href="https://www.nationalchildrensalliance.org/"> <img src="footerimages/nca.png" height="180" alt="National Childrens Alliance"> </a>
+        </div>
+        <div class="footer-image">
+            <a href="http://www.cactn.org/"> <img src="footerimages/cactn.png" width="300" alt="Child Advocacy Centers of Tennessee"> </a>
+        </div>
+        <div class="footer-image">
+            <a href="https://www.kidcentraltn.com"> <img src="footerimages/kidcentral.png" width="200" alt="Kid Central"> </a>
+        </div>
+
+    </div>
+
+    <p>&#169 2020 Child Advocacy Center - All Rights Reserved</p>
+</footer>
+<!-- bootstrap js cdn-->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/script.js"></script>
+</html>

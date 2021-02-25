@@ -1,0 +1,1169 @@
+/* Desktop menu */
+body, html{
+    height: 100%;
+    margin: 0;
+}
+
+/* Home page logo */
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* bootstrap navbar designs */
+.navbar a {
+    font-family: 'Oswald', sans-serif;
+    margin: 0 5px;
+}
+.nav-item {
+    background-color: rgb(240, 240, 240);
+    margin: 1px;
+    transition: background-color 0.4s;
+}
+
+.nav-link {
+    color: black;
+}
+.navbar-nav {
+    margin: auto;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(0,0,0,1);
+}
+
+.nav-item:hover {
+    background-color: rgb(0, 118, 214);
+}
+
+.nav-bar {
+    display: flex;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    padding: 0;
+}
+.nav_link {
+    list-style: none;
+    flex-grow: 1;
+    margin: 1px;
+    padding: 15px 0;
+    text-align: center;
+    transition: background-color 0.5s;
+    background-color: rgb(240, 240, 240);
+}
+.nav_link:hover {
+    background-color: rgb(0, 118, 214);
+}
+.nav_link a {
+    display: block;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    line-height: 100%;
+    color: black;
+    transition: color 0.4s;
+    margin: 0 7px;
+}
+.nav_link:hover a {
+    color: white;
+}
+
+.submenu {
+    display: none;
+    flex-direction: column;
+    padding: 0;
+    margin-top: 15px;
+    position: absolute;
+}
+
+.subitem {
+    padding: 4px 0;
+}
+
+.nav_link:hover .submenu {
+    display: flex;
+    list-style: none;
+    background-color: rgb(0, 118, 214);
+}
+
+.nav_link:hover .subitem a {
+    line-height: normal;
+    font-size: 16px;
+
+}
+
+.subitem:hover {
+    background-color: rgb(240, 240, 240);
+    transition: background-color 0.5s;
+}
+
+.subitem:hover a {
+    color: black;
+    transition: color 0.5s;
+}
+
+/* footer */
+footer {
+    margin: 0;
+    padding: 15px;
+    background-color: lightgray;
+}
+
+footer p {
+    font-size: 15px;
+}
+
+.addresses {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-wrap: wrap;
+
+}
+
+.address-item {
+    flex-grow: 1;
+    margin: 6px 0;
+    text-align: left;
+    padding-left: 15px;
+}
+
+.address-item p {
+    font-size: medium;
+}
+
+.footerimages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+
+.footer-image {
+    flex-grow: 1;
+    margin: 13px 10px;
+}
+
+.social-media-icons {
+    margin: 10px;
+}
+
+#app {
+    padding: 10px;
+}
+
+/* home page slideshow */
+.carousel-item {
+    max-height: 600px;
+}
+
+.carousel-caption {
+    background-color:rgb(0, 118, 240);
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 40px;
+    margin-left: 53%;
+    display: table;
+    text-decoration: none;
+    transition: background-color 0.5s;
+    max-width: 420px;
+}
+
+/* changes the location of the slideshow button as the screen decreases in size */
+@media screen and (max-width: 1100px) {
+    .carousel-caption {
+        margin-left: 40%;;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .carousel-caption {
+        margin-left: 10%;;
+    }
+}
+
+.carousel-caption:hover {
+    background-color: white;
+}
+
+.carousel-caption button {
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+    transition: color 0.4s, letter-spacing 0.5s;
+}
+
+.carousel-caption:hover button {
+    color: black;
+    letter-spacing: 1px;
+}
+
+/* statistics for homepage */
+.statistics {
+    background-color: rgb(0, 118, 214);  
+}
+
+.statistics-header {
+    text-align: center;
+    padding: 30px;
+}
+
+.statistics-header h2 {
+    color: white;
+}
+
+.statistics-flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+
+.statistics-item {
+    background-image: url('Miscimages/StaisticsBackground.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin: 20px;
+    width: 300px;
+    height: 300px;
+}
+
+.counter {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 7%;
+}
+.stat-name{
+    text-align: center;
+    margin: auto;
+    width: 55%;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 35px;
+}
+/* newsletter for homepage */
+.newsletter {
+    padding: 80px 0;
+    background: #f2f2f2;
+}
+
+.newsletter .content {
+    max-width: 650px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+.newsletter .content h2 {
+    color: #243c4f;
+    margin-bottom: 40px;
+}
+.newsletter .content .form-control {
+    height: 50px;
+    border-color: #ffffff;
+    border-radius:0;
+}
+.newsletter .content.form-control:focus {
+    box-shadow: none;
+    border: 2px solid #243c4f;
+}
+.newsletter .content .btn {
+    min-height: 50px;
+    border-radius:0;
+    background: #243c4f;
+    color: #fff;
+    font-weight:600;
+}
+
+/*Our Team*/
+*{
+    box-sizing: border-box;
+}
+
+.card-wrapper{
+    display:flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+.ot-card {
+    width: 30%;
+    min-width: 20rem;
+    background-color: #ebeef8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+    box-shadow: .5rem .5rem 3rem rgba(0,0,0,0.2)
+}
+
+.profile-img-front {
+    width: 15rem;
+    height: 15rem;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid white;
+    margin-top: 1rem;
+}
+
+.ot-card h2 {
+    color: #333333;
+    margin: 1.5rem 0;
+    text-align: center;
+}
+.job-title{
+    color: #777;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+@media screen and (min-width: 700px) {
+    .card-wrapper{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .ot-card{
+        margin: 1rem;
+    }
+}
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.ot-card:nth-child(1){
+    animation: fadeIn .5s .5s backwards;
+}
+.ot-card:nth-child(2){
+    animation: fadeIn .5s 1s backwards;
+}
+.ot-card:nth-child(3){
+    animation: fadeIn .5s 1.5s backwards;
+}
+.ot-card:nth-child(4){
+    animation: fadeIn .5s 2s backwards;
+}
+/* background image for cac staff */
+.pImg{
+    position: relative;
+    background-image: url("Miscimages/downtown-murfreesboro.jpg");
+    min-height: 400px;
+    opacity: 0.80;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-bottom: 20px;
+}
+.pText{
+    position: absolute;
+    top:50%;
+    width:100%;
+    text-align: center;
+    color: #000;
+    font-size:27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+.pText .border {
+    background-color: #111;
+    color: #fff;
+    padding: 20px;
+}
+
+/* background image for board and committee */
+.pImg1{
+    position: relative;
+    background-image: url("Miscimages/white-background.jpg");
+    min-height: 200px;
+    opacity: 0.80;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+.pText1{
+    position: absolute;
+    top:50%;
+    width:100%;
+    text-align: center;
+    color: #000;
+    font-size:27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+.pText1 .border1 {
+    background-color: #111;
+    color: #fff;
+    padding: 20px;
+}
+.card-group{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+/* makes board and committee flex items in a flex box (useful for responsive design) */
+.ot-flex-item {
+    flex-grow: 1;
+    min-width: 350px;  
+}
+
+@media (max-width: 450px) {
+    .ot-flex-item {
+        min-width: 250px;
+    }
+}
+
+.fa-envelope {
+    color: rgb(0, 118, 240);
+}
+
+
+/*Rutherford and Cannon Services*/
+.RCImg{
+    position: relative;
+    background-image: url("Miscimages/rutherford.jpg");
+    min-height: 500px;
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-bottom: 20px;
+}
+
+.CCImg{
+    position: relative;
+    background-image: url("Miscimages/cannon-bg.jpg");
+    min-height: 400px;
+
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-bottom: 20px;
+}
+
+.RCImg h1 {
+    color: white;
+    background-color: rgb(177, 177, 177);
+    width: 200px;
+    text-align: center;
+    font-size: 35px;
+    margin-left: 50px;
+    padding-top: 10px;
+    font-weight: 300;
+}
+
+.CCImg h1 {
+    color: white;
+    background-color: rgb(177, 177, 177);
+    width: 200px;
+    text-align: center;
+    font-size: 35px;
+    margin-left: 50px;
+    padding-top: 10px;
+    font-weight: 300;
+}
+
+#services-header {
+    color: rgb(0, 118, 240);
+    margin: auto;
+    font-size: 60px;
+    display: table;
+    text-align: center;
+}
+
+.statistics-cannon {
+    background-color: rgb(0, 118, 214);
+    margin: auto;
+}
+/* for responsive design */
+@media (max-width: 700px) {
+    .RCImg {
+        min-height: 250px;
+    }
+    .RCImg h1 {
+        margin-left: 20px;
+    }
+    #services-header {
+        margin-left: 20px;
+    }
+    .block-item p {
+        padding: 15px;
+    }
+    .block-item img {
+        padding: 15px;
+    }
+    .forensic-services-list-item {
+        padding: 15px;
+    }
+}
+
+.service-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.vertical-service-block {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column;
+}
+.forensic-services-image-item {
+    margin-bottom: 50px;
+}
+.forensic-services-list-item {
+    padding-top: 30px;
+    padding-left: 15px;
+    padding-bottom: 20px;
+    background-color: rgba(0, 118, 240, 0.95);
+    width: 440px;
+    border-radius: 25px;
+    color: rgb(236, 232, 232);
+    font-size: larger;
+    font-weight: 400;
+}
+.forensic-services-list-item h3 {
+    text-align: center;
+    background-color: white;
+    color: black;
+    width: 300px;
+    margin: auto;
+    margin-bottom: 15px;
+    font-weight: 300;
+    padding: 8px;
+    border-radius: 25px;
+}
+
+.block-item{
+    margin-left: 10px;
+    margin-top: 20px;
+    flex-grow: 1;
+    max-width: 550px;
+}
+
+.block-item h1 {
+    display: table;
+    background-color: rgb(0, 118, 240);
+    color: white;
+    text-align: center;
+    padding: 10px 10px;
+}
+
+.block-item p {
+    font-size: large;
+    margin-top: 15px;
+}
+
+.block-item img {
+    object-fit: cover;
+}
+
+@media (max-width: 450px) {
+    .block-item img {
+        width: 310px;
+    }
+}
+
+/* Rutherford and Cannon county darkness to light page */
+.d2l-pictures {
+    width: 75%;
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.d2l-text {
+    display: block;
+    margin: auto;
+    margin-bottom: 80px;
+
+}
+
+.d2l-text h1 {
+    color: rgb(0, 118, 240);
+    font-size: 60px;
+    display: table;
+    margin: auto;
+    text-align: center;
+    font-weight: 300;
+}
+
+.d2l-text p {
+    font-size: large;
+    padding: 0 15%;
+    margin-top: 50px;
+}
+
+.steps {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 80px;
+}
+
+.step {
+    flex-grow: 1;
+}
+
+.step h4 {
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+    max-width: 200px;
+    margin: auto;
+    color: white;
+    padding-top: 75px;
+    letter-spacing: 2px;
+}
+
+.step p {
+    max-width: 200px;
+    text-align: center;
+    font-size: 20px;
+    margin: auto;
+    margin-top: 35px;
+    padding-bottom: 75px;
+    color: white;
+    font-weight: 300;
+}
+
+/* each step at the bottom of the d2l page */
+.step1 {
+    background-color: rgb(145, 145, 145);
+}
+.step2 {
+    background-color: rgb(0, 133, 223);
+}
+.step3 {
+    background-color: rgb(237, 237, 237);
+}
+.step3 h4{
+    color: rgb(0, 133, 223);
+}
+.step3 p {
+    color: black;
+}
+
+.step4 {
+    background-color: rgb(102, 175, 222);
+}
+
+.step5 {
+    background-color: rgb(56, 58, 88);
+}
+
+.d2l-buttons-header {
+    color: rgb(0, 118, 240);
+    text-align: center;
+    font-weight: 300;
+}
+
+.d2l-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+.d2l-buttons a {
+    font-size: 30px;
+    font-weight: 300;
+    text-decoration: none;
+    background-color: rgb(0, 133, 223);
+    color: white;
+    padding: 10px 20px;
+    transition: background-color 0.5s, color 0.5s, letter-spacing 0.5s;
+    margin: 35px;
+}
+
+.d2l-buttons a:hover {
+    color: black;
+    background-color: lightgray;
+    letter-spacing: 2px;
+}
+
+@media (max-width: 950px) {
+    .steps {
+        flex-wrap: wrap;
+    }
+}
+
+.d2l-attend-training-text {
+    background-color: rgb(240, 240, 240);
+    padding: 20px;
+}
+
+
+/* CPIT team for both rutherford and cannon */
+.cpit-header {
+    color: rgb(0, 118, 214);
+    display: table;
+    text-align: center;
+    margin: auto;
+    padding-top: 40px;
+}
+
+.column {
+    float: left;
+    width: 30%;
+    padding: 0 8px;
+    margin: auto;
+    margin-top: 35px;
+    margin-bottom: 25px;
+  }
+  
+  /* Display the columns below each other instead of side by side on small screens */
+  @media screen and (max-width: 1100px) {
+    .column {
+      width: 45%;
+      display: block;
+      margin: auto;
+      margin-top: 35px;
+      margin-bottom: 25px;
+    }
+  }
+
+
+  @media screen and (max-width: 750px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin: 50px;
+    }
+  }
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .card img {
+      height: 250px;
+      
+  }
+ 
+  .container {
+    padding: 0 16px;
+  }
+  
+  /* Clear floats */
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .cpit-button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: rgb(0, 133, 223);
+    transition: background-color 0.5s;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .cpit-button:hover {
+    background-color: #555;
+  }
+
+  .cpit-flex {
+      display: flex;
+      flex-wrap: nowrap;
+  }
+  .cpit-flex-item {
+      flex-grow: 1;
+  }
+
+
+/* Events, volunteer and host an event */
+.event-logo {
+    width: 350px;
+    display: block;
+    margin: auto;
+    padding: 30px;
+}
+
+.post-body {
+    background: #767676;
+    padding: 56px;
+    width: 90%;
+    margin: auto;
+}
+
+.heading-1 {
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: white;
+    color: #767676;
+    width: 230px;
+    margin: auto;
+    font-size: 70px;
+    text-align: center;
+}
+
+.baseline-1 {
+    border-bottom: 3px solid white;
+    margin-top: 16px !important;
+}
+
+.baseline-2 {
+    border-bottom: 1px solid white;
+    margin-top: 4px !important;
+}
+
+.baseline-1, .baseline-2 {
+    width: 60%;
+    margin: auto;
+    opacity: 0.7;
+}
+
+.content-row {
+    padding: 50px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.content-row>.col-6>img {
+    width: 417px;
+    height: 434px;
+}
+
+.right-content, .left-content {
+    color: white;
+    position: relative;
+}
+
+.right-content {
+    text-align: right;
+}
+
+.left-content {
+    text-align: left;
+    ;
+}
+
+.left-content>h1, .right-content>h1 {
+    font-size: 52px;
+}
+
+.right-content-p {
+    font-size: 35px;
+    width: 90%;
+    text-align: left;
+    float: right;
+    margin-top: 65px;
+}
+
+.right-join-btn {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+}
+
+.right-join-btn>button {
+    width: 140px;
+    height: 44px;
+    border: none;
+    background: #1889DB;
+    color: white;
+}
+
+.right-join-btn>button:hover {
+    background: white;
+    color: black;
+}
+
+.img-col {
+    text-align: center;
+}
+
+.content-h3 {
+    margin-top: 50px;
+}
+
+.host-event-container {
+    margin-bottom: 50px;
+}
+
+.host-event-title {
+    text-align: center;
+    font-size: 70px;
+    color: rgb(0, 118, 214);
+}
+
+.bg-light-gray {
+    background: #E2E2E2 !important;
+}
+
+.bg-light-gray>.baseline-1 {
+    border-bottom: 3px solid #9a9999 !important;
+}
+
+.bg-light-gray>.baseline-2 {
+    border-bottom: 1px solid #9a9999 !important;
+}
+
+.events-para {
+    text-align: center;
+    margin-top: 38px;
+    font-size: 32px;
+    color: #5e5959;
+}
+
+.event-form-body {
+    width: 90%;
+    background-image: url("Miscimages/lights-bg.jpg");
+    background-size: cover;
+    margin: auto;
+    padding: 35px;
+}
+
+.event-form {
+    width: 70%;
+    margin: auto;
+    border: none !important;
+}
+
+.event-form>.form-group {
+    margin-bottom: -1px;
+}
+
+.event-form>.form-group>.form-control {
+    border-radius: initial;
+    height: 65px;
+    border: 1px solid rgb(0, 118, 214) !important;
+}
+
+.submit-btn {
+    width: 100%;
+    height: 65px;
+    background: rgb(0, 118, 214);
+}
+
+.event-textarea {
+    height: 120px;
+    max-height: 120px;
+    min-height: 120px;
+}
+
+.form-control-hover:hover {
+    background-color: rgb(236, 236, 236);
+}
+
+.volunteer-view {
+    position: relative;
+}
+
+.bg-image {
+    background-image: url('Miscimages/bg.jpg');
+    /* Set a specific height */
+    height: 500px;
+    /* Create the parallax scrolling effect */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.heading-tag {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+}
+
+.header {
+    overflow: hidden;
+}
+
+.heading-tag>h1 {
+    color: white;
+    font-size: 90px;
+    letter-spacing: 2px;
+}
+
+.para-text-1 {
+    font-size: 4em;
+    color: #373B4D;
+    text-align: center;
+}
+
+.volunteer-form {
+    width: 75%;
+    margin: auto;
+}
+
+@media screen and (max-width: 550px) {
+    .volunteer-form{
+        width: 95%;
+    }
+}
+
+.left-padding-0 {
+    padding-left: 0px;
+}
+
+.padding-right-0 {
+    padding-right: 0px;
+}
+
+.form-group {
+    width: 100%;
+}
+
+.volunteer-form>.form-group>.form-control, .name-form-control, .email-form-control {
+    height: 65px;
+    border: white;
+}
+
+.volunteer-section {
+    background: #f0f0f0;
+    margin-top: 25px;
+
+}
+
+.input-box-shadow {
+    position: relative;
+    -webkit-box-shadow: 0 1px 4px white, 0 0 40px white inset;
+    -moz-box-shadow: 0 1px 4px white, 0 0 40px white inset;
+    box-shadow: 0 1px 4px white, 0 0 40px white inset;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.input-box-shadow::placeholder {
+    color: gray;
+}
+
+.input-box-shadow:before, .input-box-shadow:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    -webkit-box-shadow: 0 0 20px rgba white;
+    -moz-box-shadow: 0 0 20px rgba white;
+    box-shadow: 0 0 20px rgba white;
+    top: 0;
+    bottom: 0;
+    left: 10px;
+    right: 10px;
+    -moz-border-radius: 100px / 10px;
+    border-radius: 100px / 10px;
+}
+
+.input-box-shadow:after {
+    right: 10px;
+    left: auto;
+    -webkit-transform: skew(8deg) rotate(3deg);
+    -moz-transform: skew(8deg) rotate(3deg);
+    -ms-transform: skew(8deg) rotate(3deg);
+    -o-transform: skew(8deg) rotate(3deg);
+    transform: skew(8deg) rotate(3deg);
+}
+
+.volunteer-btn {
+    float: right;
+    border-radius: 0;
+    height: 48px;
+    width: 172px;
+    background: #373B4D;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    border: none;
+}
+
+.volunteer-btn:hover {
+    background: black;
+}
+
+
+.media-headers {
+    color: rgb(0, 118, 214);
+    font-weight: 300;
+    text-align: center;
+    margin: 25px;
+}
+
+.get-involved-photo {
+    background-image: url("Miscimages/get-involved-hands.jpg");
+    height: 47%;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.get-involved-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.get-involved-list-item {
+    flex-grow: 1;
+    min-height: 450px;
+}
+
+.get-involved-list-item h3 {
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+    width: 270px;
+    height: 300px;
+    margin: auto;
+    color: white;
+    padding-top: 75px;
+    letter-spacing: 2px;
+}
+
+.get-involved-list-item a {
+    background-color:rgb(243, 243, 243);
+    color: rgb(39, 39, 39);
+    text-align: center;
+    padding: 20px;
+    margin: 10px 45px;
+    display: block;
+    text-decoration: none;
+    transition: background-color 0.5s, color 0.5s, letter-spacing 0.5s;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.get-involved-list-item a:hover {
+    background-color: rgb(37, 37, 37);
+    color: white;
+    letter-spacing: 3px;
+}
+
+.get-involved-header {
+    color: white;
+    margin: auto;
+    font-size: 45px;
+    background-color: rgb(15, 12, 177);
+    text-align: center;
+    padding: 25px;
+    font-weight: 300;
+}
+
+.newsletter-signup {
+    margin: 50px;
+}
